@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+	<div class="container clear-fix">  
+
+
+		<div class="calc-project">
+			<h2>EXclusiv <span>v 1.00</span></h2>
+			<div class="calc-display">
+				<textarea name="text" id="calc-input" cols="30" rows="10"></textarea>
+				<!-- <h1 id="calc-output">0.00</h1> -->
+			</div>
+			<div class="calc-keys">
+				<div class="calc-sign">
+			<script>
+
+				var calcSignSt  = {add : '+',sub : '-',mul : '*',div : '/',equal : '='},
+				calcKeys        = Object.keys(calcSignSt),
+				calcValues      = Object.values(calcSignSt),
+				calcKeysLength  = calcKeys.length
+
+				for (var i = 0; i < calcKeysLength; i++) {
+					document.write('<button id="sign-',calcKeys[i],'">',calcValues[i],'</button>')
+				}
+			</script>
+				</div>
+				<div class="calc-number">
+					<script>
+						for (var i = 0; i <= 9; i++) {
+							document.write('<button id="no-',i,'">',i,'</button>');
+						}
+						
+					</script>
+					<button id="clear">Clear</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<script src="assets/scripts.js"></script>
+</body>
+</html>
