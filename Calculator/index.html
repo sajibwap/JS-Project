@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Calculator</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+	<div class="container clear-fix">  
+
+
+		<div class="calc-project">
+			<h2>EXclusiv <span>v 1.00</span></h2>
+			<div class="calc-display">
+				<textarea name="text" id="calc-input" cols="30" rows="10"></textarea>
+				<!-- <h1 id="calc-output">0.00</h1> -->
+			</div>
+			<div class="calc-keys">
+				<div class="calc-sign">
+					<button id="sign-add" onclick="insertNumber('+')">+</button>
+					<button id="sign-sub" onclick="insertNumber('-')">-</button>
+					<button id="sign-mul" onclick="insertNumber('*')">*</button>
+					<button id="sign-div" onclick="insertNumber('/')">/</button>
+					<button id="sign-equal">=</button>
+				</div>
+				<div class="calc-number">
+					<button class="btn" id="no-0" onclick="insertNumber(0)">0</button>
+					<button class="btn" id="no-1" onclick="insertNumber(1)">1</button>
+					<button class="btn" id="no-2" onclick="insertNumber(2)">2</button>
+					<button class="btn" id="no-3" onclick="insertNumber(3)">3</button>
+					<button class="btn" id="no-4" onclick="insertNumber(4)">4</button>
+					<button class="btn" id="no-5" onclick="insertNumber(5)">5</button>
+					<button class="btn" id="no-6" onclick="insertNumber(6)">6</button>
+					<button class="btn" id="no-7" onclick="insertNumber(7)">7</button>
+					<button class="btn" id="no-8" onclick="insertNumber(8)">8</button>
+					<button class="btn" id="no-9" onclick="insertNumber(9)">9</button>
+					<button id="clear">Clear</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<script src="assets/scripts.js"></script>
+</body>
+</html>
+
+
+
